@@ -1,3 +1,29 @@
 .wp-block-xwp-country-card .components-form-token-field__suggestion {
 	white-space: pre-wrap;
 }
+
+
+.wp-block-xwp-country-card-container {
+	display: flex;
+	gap: 20px;
+
+	@media only screen and (max-width: 600px) {
+		flex-wrap: wrap;
+	}
+
+	.components-placeholder {
+		border: 1px solid #c0c0c0;
+		border-radius: 3px;
+		display: block;
+		height: 150px;
+	}
+
+	.components-placeholder,
+	.xwp-country-card {
+		width: 50%;
+
+		@media only screen and (max-width: 600px) {
+			width: 100%;
+		}
+	}
+}
